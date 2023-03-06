@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { TranslocoService } from '@ngneat/transloco';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng-transloco-full-guide';
+  title = this.translocoService.translate('Выводим продукт на новые рынки');
+  constructor(private translocoService: TranslocoService) {
+   
+  }
 }

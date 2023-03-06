@@ -3,6 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TranslocoRootModule } from './transloco-root.module';
+import { customTranslocoInterceptor } from './cdk/transloco-interceptor';
+import { customMissingHandler } from './cdk/transloco-missing-handler';
 
 @NgModule({
   declarations: [
@@ -10,9 +14,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    TranslocoRootModule
   ],
-  providers: [],
+  providers: [customTranslocoInterceptor, customMissingHandler],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
