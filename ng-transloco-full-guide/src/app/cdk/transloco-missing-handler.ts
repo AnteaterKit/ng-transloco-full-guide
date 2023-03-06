@@ -2,7 +2,6 @@ import { TranslocoConfig, TranslocoMissingHandler, TRANSLOCO_MISSING_HANDLER } f
 
 export class CustomHandler implements TranslocoMissingHandler {
   handle(key: string, config: TranslocoConfig) {
-    //console.log('999');
     return '!!!...';
   }
 }

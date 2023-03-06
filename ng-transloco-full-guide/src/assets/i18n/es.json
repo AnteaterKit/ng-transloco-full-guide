@@ -1,4 +1,11 @@
 {
-  "Добро пожаловать в любую страну": "Missing value for 'Добро пожаловать в любую страну'",
-  "Выводим продукт на новые рынки": "Missing value for 'Выводим продукт на новые рынки'"
+  "Добро пожаловать в любую страну": "Welcome to any country",
+  "Выводим продукт на новые рынки": "We bring the product to new markets",
+  "Ресурсы": "Resources",
+  "Вот несколько ссылок, которые помогут вам начать работу:": "Here are some links to help you get started:",
+  "Изучить транслоко": "Learn transloco",
+  "Исходники примера": "Example sources",
+  "Материал": "Material",
+  "Ангуляр блог": "Angular blog",
+  "Инструменты разработчика": "Developer Tools"
 }

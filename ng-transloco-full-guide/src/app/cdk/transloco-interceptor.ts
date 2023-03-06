@@ -1,13 +1,13 @@
 import { Translation, TranslocoInterceptor, TRANSLOCO_INTERCEPTOR } from '@ngneat/transloco';
 
 export class CustomTranslocoInterceptor implements TranslocoInterceptor {
+  // вызов происходить при инициализации языка и словаря
   preSaveTranslation(translation: Translation, lang: string): Translation {
-    console.log('999 99');
     return translation;
   }
 
   preSaveTranslationKey(key: string, value: string, lang: string): string {
-    console.log('999');
+    // вызов происходить при добавлении нового ключа в рантайме
     return value;
   }
 }
