@@ -24,7 +24,6 @@ export class TranslateDateAdapter extends NativeDateAdapter {
   }
 
   override getMonthNames() {
-    console.log('getMonthNames');
     return MONTH_CUSTOM_NAMES;
   }
 }

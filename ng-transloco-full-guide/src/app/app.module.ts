@@ -14,10 +14,12 @@ import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/materia
 import { MAT_MOMENT_DATE_ADAPTER_OPTIONS, MAT_MOMENT_DATE_FORMATS, MomentDateAdapter } from '@angular/material-moment-adapter';
 import { MatButtonModule } from '@angular/material/button';
 import { TranslateDateAdapter } from './cdk/translate-date-adapter';
+import { CalendarComponent } from './calendar/calendar.component';
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [	
+    AppComponent,
+    CalendarComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
